@@ -15,7 +15,7 @@ public class Menjacnica implements MenjacnicaInterfejs{
 				postoji=true;
 		}
 		if(postoji)
-			System.out.println("Kurs za ovaj datum vec postoji! ");
+			System.out.println("Kurs za ovaj datum vec postoji ");
 		else
 			valuta.getKursevi().add(kurs);
 	}
