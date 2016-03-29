@@ -1,9 +1,7 @@
 package menjacnica;
 
 import java.util.GregorianCalendar;
-
-public class Kurs {
-	
+public class Kurs { 
 	private GregorianCalendar datum;
 	private double prodajni;
 	private double kupovni;
@@ -81,4 +79,5 @@ public class Kurs {
 		return "Kurs [datum=" + datum + ", prodajni=" + prodajni + ", kupovni=" + kupovni + ", srednji=" + srednji
 				+ "]";
 	}
-	}
+	
+}

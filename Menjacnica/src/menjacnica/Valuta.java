@@ -3,7 +3,6 @@ package menjacnica;
 import java.util.LinkedList;
 
 public class Valuta {
-
 	private String naziv;
 	private String skraceniNaziv;
 	private LinkedList<Kurs> kursevi;
@@ -70,6 +69,4 @@ public class Valuta {
 	public String toString() {
 		return "Valuta [naziv=" + naziv + ", skraceniNaziv=" + skraceniNaziv + ", kursevi=" + kursevi + "]";
 	}
-	
-	
-}
+} 
