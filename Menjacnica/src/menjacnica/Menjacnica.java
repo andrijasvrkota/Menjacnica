@@ -9,15 +9,19 @@ public class Menjacnica implements MenjacnicaInterfejs{
 
 
 	public void dodajKurs(Kurs kurs, Valuta valuta) {
+		
 		boolean postoji=false;
-		for (int i = 0; i < valuta.getKursevi().size(); i++) {
-			if(valuta.getKursevi().get(i).getDatum().equals(kurs.getDatum()))
+		int brojKurseva = valuta.getKursevi().size();
+		
+		for (int i = 0; i < brojKurseva; i++) {
+			if(valuta.getKursevi().get(i).getDatum() == kurs.getDatum())
 				postoji=true;
 		}
-		if(postoji)
-			System.out.println("Kurs za ovaj datum vec postoji ");
+		if(postoji == true)
+			System.out.println("Ovaj datum vec postoji ");
 		else
 			valuta.getKursevi().add(kurs);
+
 	}
 
 	
